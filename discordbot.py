@@ -17,6 +17,11 @@ async def on_command_error(ctx, error):
 async def nyaa(ctx):
     await ctx.send('にゃーん')
     
+    
+"""メンバーのボイスチャンネル出入り時に実行されるイベントハンドラ"""
+@.event
+async def on_voice_state_update(member, before, after):
+    
 
 
 
